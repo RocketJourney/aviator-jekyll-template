@@ -1,5 +1,5 @@
 ---
-title: Errors
+title: Status Codes
 position: 3
 ---
 

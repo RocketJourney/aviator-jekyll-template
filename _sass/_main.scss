@@ -157,8 +157,7 @@ dl dd:after {
 .sidebar h6 {
 	line-height: 1em;
 	font-size: 1.5rem;
-	letter-spacing: 1px;
-	color: #888;
+	color: #999;
 	font-weight: bold;
 }
 
@@ -183,7 +182,7 @@ dl dd:after {
 	}
 
 	a {
-		color: #777;
+		color: #ccc;
 		text-decoration: none;
 		font-size: .90em;
 		display: block;
@@ -193,7 +192,7 @@ dl dd:after {
 		padding: 2px 0;
 
 		&.active {
-			color: #2196F3;
+			color: #ffcc00;
 			text-decoration: none;
 		}
 	}
@@ -239,7 +238,7 @@ h3 .endpoint {
 }
 
 .main {
-	margin: 0 0 0 210px;
+	margin: 0 0 0 240px;
 	border-left: 1px solid #eee;
 	h6 {
 		font-size: 1.01em;
@@ -431,19 +430,18 @@ hr {
 }
 
 header {
-	max-height: 100vh;
+	height: 100vh;
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	overflow-x: hidden;
 	z-index: 1;
-	background-color: $nav-background-color;
+	background-color: #494949;
 
 	h1 {
-		height: $nav-header-height;
+		height: 60px;
 		box-sizing: border-box;
-		background-color: $brand-colour;
 		color: #fff;
 		margin: 0;
 		font-size: 1.7rem;
@@ -454,7 +452,6 @@ header {
 		@include display-flex();
 		@include flex-direction(row);
 		@include align-items(center);
-		border-bottom: 1px solid rgba(0, 0, 0, 0.075);
 
 		img {
 			height: 26px;
@@ -483,8 +480,7 @@ header {
 	}
 
 	@media (min-width: $mobile-break) {
-		background-color: transparent;
-		width: $nav-width;
+		width: 240px;
 		right: auto;
 		bottom: auto;
 
@@ -502,21 +498,23 @@ header {
 	-webkit-appearance: none;
 
 	display: block;
-	margin: 0;
+	margin: 0 auto;
 	padding: 10px 20px;
-	width: 100%;
+	width: 9
+	0%;
 	box-sizing: border-box;
 
 	border: 0;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+	border-radius: 8px;
+	background-color: #eaeaea;
 
 	font-size: 1.5rem;
 	font-weight: 600;
-	line-height: 1.8;
+	line-height: 1.2;
 
 	&:focus {
 		outline: none;
-		border-left: 5px solid $brand-colour;
+		border-left: 5px solid #ffcc00;
 		padding-left: 15px;
 	}
 }
