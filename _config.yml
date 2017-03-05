@@ -8,12 +8,12 @@ google_analytics_key:
 permalink: pretty
 
 collections:
-  documentation:
-    title: Documentation
-    position: 1
+  examples:
+    title: Examples
+    position: 2
   api:
     title: APIs
-    position: 2
+    position: 1
 gems:
   - jekyll-sitemap
   - jekyll-seo-tag
